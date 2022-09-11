@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71A03B44-497C-42E2-A9B7-A8B516C538C2}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PetShop</RootNamespace>
+    <AssemblyName>PetShop</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="AddPet.xaml.cs">
+      <DependentUpon>AddPet.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="bed.cs" />
+    <Compile Include="BedDisplay.xaml.cs">
+      <DependentUpon>BedDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BedDisplayVM.cs" />
+    <Compile Include="BirdCages.cs" />
+    <Compile Include="BirdCagesDisplay.xaml.cs">
+      <DependentUpon>BirdCagesDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BirdCagesVM.cs" />
+    <Compile Include="BirdFood.cs" />
+    <Compile Include="CatBeds.cs" />
+    <Compile Include="CatBedsDisplay.xaml.cs">
+      <DependentUpon>CatBedsDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CatBedsDisplayVM.cs" />
+    <Compile Include="CatClothes.cs" />
+    <Compile Include="CatFood.cs" />
+    <Compile Include="BirdFoodDisplay.xaml.cs">
+      <DependentUpon>BirdFoodDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="BirdFoodDisplayVM.cs" />
+    <Compile Include="ClotheDisplay.xaml.cs">
+      <DependentUpon>ClotheDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ClotheDisplayVM.cs" />
+    <Compile Include="clothes.cs" />
+    <Compile Include="DogBeds.cs" />
+    <Compile Include="CatClothesDisplay.xaml.cs">
+      <DependentUpon>CatClothesDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DogClothesDisplay.xaml.cs">
+      <DependentUpon>DogClothesDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DogBedsDisplay.xaml.cs">
+      <DependentUpon>DogBedsDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DogBedsDisplayVM.cs" />
+    <Compile Include="DogClothes.cs" />
+    <Compile Include="CatClothesDisplayVM.cs" />
+    <Compile Include="DogFood.cs" />
+    <Compile Include="CatFoodDisplay.xaml.cs">
+      <DependentUpon>CatFoodDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CatFoodDisplayVM.cs" />
+    <Compile Include="DogClothesDisplayVM.cs" />
+    <Compile Include="FishBowls.cs" />
+    <Compile Include="DogFoodDisplay.xaml.cs">
+      <DependentUpon>DogFoodDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FishFoodDisplay.xaml.cs">
+      <DependentUpon>FishFoodDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FishBowlsDisplay.xaml.cs">
+      <DependentUpon>FishBowlsDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DogFoodDisplayVM.cs" />
+    <Compile Include="FishFoodDisplayVM.cs" />
+    <Compile Include="FishBowlsDisplayVM.cs" />
+    <Compile Include="FishFood.cs" />
+    <Compile Include="food.cs" />
+    <Compile Include="FoodDisplay.xaml.cs">
+      <DependentUpon>FoodDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="FoodDisplayVM.cs" />
+    <Compile Include="LandPet.cs" />
+    <Compile Include="LandPetDisplay.xaml.cs">
+      <DependentUpon>LandPetDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="LandPetDisplayVM.cs" />
+    <Compile Include="SeaPet.cs" />
+    <Compile Include="SeaPetDisplay.xaml.cs">
+      <DependentUpon>SeaPetDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SeaPetDisplayVM.cs" />
+    <Compile Include="SellerWindow.xaml.cs">
+      <DependentUpon>SellerWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="shopCart.xaml.cs">
+      <DependentUpon>shopCart.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ShoppingCartViewModel.cs" />
+    <Compile Include="SuperPet.cs" />
+    <Compile Include="Supplies.cs" />
+    <Compile Include="UserReceipt.xaml.cs">
+      <DependentUpon>UserReceipt.xaml</DependentUpon>
+    </Compile>
+    <Page Include="AccountMaker.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="AddPet.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BedDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BirdCagesDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CatBedsDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="BirdFoodDisplay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ClotheDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CatClothesDisplay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DogClothesDisplay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DogBedsDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CatFoodDisplay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="DogFoodDisplay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FishFoodDisplay.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="FishBowlsDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="FoodDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="LandPetDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Login.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Compile Include="Account.cs" />
+    <Compile Include="AccountMaker.xaml.cs">
+      <DependentUpon>AccountMaker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="DelegateCommand.cs" />
+    <Compile Include="Login.xaml.cs">
+      <DependentUpon>Login.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Page Include="PetDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SeaPetDisplay.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="SellerWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="shopCart.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserReceipt.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainWindowViewModel.cs" />
+    <Compile Include="PetDisplay.xaml.cs">
+      <DependentUpon>PetDisplay.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="PetDisplayVM.cs" />
+    <Compile Include="Pets.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Golden Retriever.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\clown fish.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Cat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\Parrot.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\1_Bird_Cage.jpg" />
+    <Resource Include="Images\2_bird_cage.jpg" />
+    <Resource Include="Images\3_Bird_cage.jpg" />
+    <Resource Include="Images\Beagle.jpg" />
+    <Resource Include="Images\bird.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\cat_bed_cave.jpg" />
+    <Resource Include="Images\cat_bed_igloo.jpg" />
+    <Resource Include="Images\cat_food_mixedgrill.jpg" />
+    <Resource Include="Images\cat_jacket.jpg" />
+    <Resource Include="Images\cat_red_shirt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\colorful_fish.jpg" />
+    <Resource Include="Images\diet_bird_food.jpg" />
+    <Resource Include="Images\dog_bed_couch.jpg" />
+    <Resource Include="Images\dog_dragon_sweater.jpg" />
+    <Resource Include="Images\dog_fashion_clothes.jpg" />
+    <Resource Include="Images\dog_food_beef_vegies.jpg" />
+    <Resource Include="Images\dog_food_with_beef.jpg" />
+    <Resource Include="Images\dog_house_fancy.jpg" />
+    <Resource Include="Images\dog_house_flat.jpg" />
+    <Resource Include="Images\fish_bowl.jpg" />
+    <Resource Include="Images\fish_color_flakes.jpg" />
+    <Resource Include="Images\fish_tank.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\grain_free_cat_food.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\molly.jpg" />
+    <Resource Include="Images\natural_bird_food.jpg" />
+    <Resource Include="Images\natural_cat_food.jpg" />
+    <Resource Include="Images\Orange_Cat.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\platy.jpg" />
+    <Resource Include="Images\seed_bird_food.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\tetra.jpg" />
+    <Resource Include="Images\tetra_color_fish_flakes.jpg" />
+    <Resource Include="Images\tropical_fish_flakes.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Images\v_dog_food.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

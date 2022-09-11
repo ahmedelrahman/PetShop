@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<ArrayOfAccount xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Account Username="a" Password="a" FirstName="a" LastName="a" Email="a" PaymentMethod="System.Windows.Controls.ComboBoxItem: Credit/Debit Card" AccountType="Buyer" />
+  <Account Username="b" Password="b" FirstName="b" LastName="b" Email="b" PaymentMethod="System.Windows.Controls.ComboBoxItem: Credit/Debit Card" AccountType="Seller">
+    <petsToSell>
+      <Description>w</Description>
+      <Price>2</Price>
+      <Stock>2</Stock>
+      <Name>q</Name>
+      <PurchasedAmount>0</PurchasedAmount>
+    </petsToSell>
+  </Account>
+  <Account Username="a" Password="a" FirstName="ah" LastName="a" Email="aaa" PaymentMethod="System.Windows.Controls.ComboBoxItem: Paypal" AccountType="Buyer" />
+  <Account Username="b" Password="b" FirstName="b" LastName="b" Email="b" PaymentMethod="System.Windows.Controls.ComboBoxItem: Credit/Debit Card" AccountType="Buyer" />
+  <Account Username="c" Password="c" FirstName="c" LastName="c" Email="c" PaymentMethod="System.Windows.Controls.ComboBoxItem: Credit/Debit Card" AccountType="Buyer" />
+  <Account Username="g" Password="g" FirstName="g" LastName="g" Email="g@yahoo.com" PaymentMethod="System.Windows.Controls.ComboBoxItem: Credit/Debit Card" AccountType="Buyer" />
+  <Account Username="j" Password="j" FirstName="j" LastName="j" Email="j@yahoo.com" PaymentMethod="System.Windows.Controls.ComboBoxItem: Credit/Debit Card" AccountType="Seller">
+    <petsToSell>
+      <Description>g</Description>
+      <Price>3</Price>
+      <Stock>2</Stock>
+      <Name>g</Name>
+      <PurchasedAmount>0</PurchasedAmount>
+    </petsToSell>
+    <petsToSell>
+      <Description>p</Description>
+      <Price>3</Price>
+      <Stock>2</Stock>
+      <Name>p</Name>
+      <PurchasedAmount>0</PurchasedAmount>
+    </petsToSell>
+  </Account>
+</ArrayOfAccount>
